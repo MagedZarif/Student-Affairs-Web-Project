@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Edit
+        </title>
+        <style>
+        </style>
+        <link rel="stylesheet" href="../css/Style.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header class="Header">
+            <div class="container">
+            <div class="site_logo"><a href="#">ST<span>Affairs</span></a></div>
+            <div class="mobile_nav">
+                <i class="fas fa-bars"> </i>
+            </div>
+            <div class="site_menu">
+            <ul class="p_menu">
+                <li><a href="Home.html" class="active_">HomePage</a></li>
+                <li><a href="Edit.html" class="active">Edit</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="project_view.html" class="active">View</a></li>
+                <li><a href="department.html" class="active">Department</a></li>
+                <li><a href="Add.html" class="active">Add Student</a></li>
+            </ul>
+            </div>
+            </div>
+        </header>
+        <div class="container_body">
+            <form>
+                <label>Name</label>
+                <input type="text" name="name"><br><br>
+                <label>ID</label>
+                <input type="number" name="ID" min="0"><br><br>
+                <label>Date of birth</label>
+                <input type="Date" name="date"><br><br>
+                <label>GPA</label>
+                <input type="number" name="GPA" min="0.00" max="4.00"><br><br>
+                <label>Level</label>
+                <input type="number" name="level" min="1" max="4"><br><br>
+                <label>Status</label>
+                <input type="text" name="Status" placeholder="Active/Inactive"><br><br>
+                <input type="submit" value="Update" id="submit">
+                <input type="submit" value="Delete" id="submit">
+            </form>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(Document).ready(function(){
+                    $(".mobile_nav i").click(function(){
+                        $(".site_menu").toggleClass("mobile_menu");
+                    });
+                })
+            </script>
+            <script src="../JS/edit.js"></script>
+        </body>
+    </html>

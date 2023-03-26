@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student assignment</title>
+        
+        <link rel="stylesheet" href="../css/department.css">
+    </head>
+    
+<body>
+    <header class="Header">
+        <div class="container">
+        <div class="site_logo"><a href="#">ST<span>Affairs</span></a></div>
+        <div class="mobile_nav">
+            <i class="fas fa-bars"> </i>
+        </div>
+            
+        <div class="site_menu">
+        <ul class="p_menu">
+            <li><a href="Home.html" class="active_">HomePage</a></li>
+            <li><a href="Edit" class="active">Edit</a></li>
+            <li><a href="search.html" class="active">Search</a></li>
+            <li><a href="project_view.html" class="active">View</a></li>
+            <li><a href="department.html" class="active">Department</a></li>
+            <li><a href="Add.html" class="active">Add Student</a></li>
+        </ul>
+        </div>
+        </div>
+    </header>
+<div class="M_container">
+<h1> Department Assignment</h1>
+<br>
+<form > 
+<div>
+    <per>
+<label>Student Name</label><br>
+<input type="text" name="name"readonly>
+
+    </per>
+</div>
+<br>
+
+<div>
+    <per>
+<label>Student ID  </label><br>
+<input type="text" name="id"readonly>
+
+    </per>
+</div>
+<br> 
+
+<div  id="level"  > 
+    <per>
+<label>Student Level</label><br>
+<input type="text" name="level">
+
+    </per>
+</div>
+<br>
+<br>
+<div>
+<per>
+    <label id="lab" for="department">Department<Department</label><br>
+    <select name="Department" id="department">
+        <option value="AI">Artificial Inteligence</option>
+        <option value="CS">Computer Science</option>
+        <option value="DS">Decision Support</option>
+        <option value="IS">Information System</option>
+        <option value="IT"> Information Technology</option>
+    
+    
+    </select>
+</per>
+
+</div>
+<br>
+<br>
+<div>
+    <button onsubmit="check()" type="submit">Submit</button>
+    </div>
+    
+    </form>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(Document).ready(function(){
+                $(".mobile_nav i").click(function(){
+                    $(".site_menu").toggleClass("mobile_menu");
+                });
+            })
+        </script>
+    <script src= "../JS/validation.js"></script>
+    
+</body>
+</html>

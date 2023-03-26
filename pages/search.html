@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title> search for student </title>
+        <link rel="stylesheet" href="../css/search.css">
+    </head>
+    <body>
+        <header class="Header">
+            <div class="container">
+            <div class="site_logo"><a href="#">ST<span>Affairs</span></a></div>
+            <div class="mobile_nav">
+                <i class="fas fa-bars"> </i>
+            </div>
+                
+            <div class="site_menu">
+            <ul class="p_menu">
+                <li><a href="Home.html" class="active_">HomePage</a></li>
+                <li><a href="Edit.html" class="active">Edit</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="project_view.html" class="active">View</a></li>
+                <li><a href="department.html" class="active">Department</a></li>
+                <li><a href="Add.html" class="active">Add Student</a></li>
+            </ul>
+            </div>
+            </div>
+        </header>
+        <!--this is search box -->
+        <div class="container_2">
+        <div class="search">
+            <input id="search-box1" type="text" name="search" placeholder="student Name">
+            <button id="search-button" type="submit" onclick="search()">Search</button>
+            <button id="back-button" type="submit" onclick="goBack()">Go Back</button>
+            <p id="error"></p>
+        </div>
+        </div>
+        <!--this is the result-->
+        <h1 id="result">
+            The result :
+          </h1>
+          <div class="result" >
+            <table id="student-status">
+                
+                <tr>
+                    <th>student Name </th>
+                    <th style="width:35%;">student status</th>
+                </tr>
+                <tr>
+                    <td>empty</td>
+                    <td></td>
+                </tr>
+                
+                
+            </table>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(Document).ready(function(){
+                $(".mobile_nav i").click(function(){
+                    $(".site_menu").toggleClass("mobile_menu");
+                });
+            })
+        </script>
+            <script src="../JS/search.js">
+            </script>
+        
+        
+    </body>
+</html>
